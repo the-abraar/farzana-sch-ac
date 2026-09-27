@@ -1,0 +1,6 @@
+.DS_Store
+.venv/
+node_modules/
+p4_discourse/data/
+__pycache__/
+p4_discourse/out/coding_sample.csv

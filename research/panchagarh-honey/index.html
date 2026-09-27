@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Research & Economic Ethnography — Farzana Reza Shifa</title>
+<meta name="description" content="Applied sociological field research and informal economy ethnography by Farzana Reza Shifa. Field study on migratory litchi honey (Lichur Modhu) entrepreneurs in Panchagarh, Bangladesh.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Field Research — Farzana Reza Shifa">
+<meta property="og:description" content="Applied economic ethnography: Migratory litchi honey entrepreneurs and informal value chains in Panchagarh, Bangladesh.">
+<meta property="og:url" content="https://farzana.sch.ac/research/panchagarh-honey/">
+<meta property="og:image" content="https://farzana.sch.ac/research/panchagarh-honey/assets/shifa-beekeeping-frame.jpg">
+<meta property="og:type" content="article">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23D9822B'/%3E%3Ctext x='50' y='68' font-size='55' font-family='sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #F2F1ED;
+    --card: #FFFFFF;
+    --ink: #131313;
+    --ink-soft: #2A2A28;
+    --muted: #6F6E6A;
+    --faint: #A5A39D;
+    --line: #E6E4DE;
+    --accent: #FF4A1F;
+    --honey: #D9822B;
+    --honey-dark: #A05915;
+    --honey-light: #FDF3E7;
+    --radius-lg: 28px;
+    --radius-md: 20px;
+    --radius-sm: 12px;
+    --max-w: 1060px;
+    --shadow-card: 0 1px 2px rgba(19,19,19,0.04), 0 10px 30px -12px rgba(19,19,19,0.10);
+    --shadow-pill: 0 1px 2px rgba(19,19,19,0.06), 0 12px 32px -14px rgba(19,19,19,0.18);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .display{
+    font-family: 'Inter Tight', 'Inter', sans-serif;
+    letter-spacing: -0.035em;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .serif-accent{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  a{ color: inherit; }
+
+  .wrap{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 640px){
+    .wrap{ padding: 0 18px; }
+  }
+
+  /* Motion reduction */
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  /* -------- Reveal animation -------- */
+  .reveal{
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 650ms cubic-bezier(.22,.61,.36,1), transform 650ms cubic-bezier(.22,.61,.36,1);
+  }
+  .reveal.in{ opacity: 1; transform: translateY(0); }
+  .reveal.d1{ transition-delay: 80ms; }
+  .reveal.d2{ transition-delay: 160ms; }
+  .reveal.d3{ transition-delay: 240ms; }
+
+  /* -------- Floating Nav -------- */
+  .nav-shell{
+    position: fixed;
+    top: 16px; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+
+  .nav-pill{
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(19,19,19,0.08);
+    border-radius: 999px;
+    padding: 8px 10px 8px 18px;
+    box-shadow: var(--shadow-pill);
+    max-width: 840px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+    font-size: 15.5px;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .brand-badge{
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    background: var(--honey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 800;
+  }
+
+  .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .nav-links a{
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+  .nav-links a:hover{ color: var(--ink); }
+
+  .nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: #fff;
+    border-radius: 999px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    border: none;
+    cursor: pointer;
+    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+    white-space: nowrap;
+  }
+  .btn:hover{
+    background: #000;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px -10px rgba(19,19,19,0.35);
+  }
+  .btn.honey{
+    background: var(--honey);
+  }
+  .btn.honey:hover{
+    background: var(--honey-dark);
+  }
+  .btn.light{
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .btn.light:hover{
+    background: #fff;
+    box-shadow: 0 10px 24px -12px rgba(19,19,19,0.20);
+  }
+
+  @media (max-width: 720px){
+    .nav-links{ display: none; }
+    .nav-pill{ max-width: none; width: auto; gap: 14px; }
+  }
+
+  /* -------- Hero Section -------- */
+  .hero{
+    padding: 130px 0 36px;
+  }
+
+  .chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    box-shadow: 0 1px 2px rgba(19,19,19,0.04);
+    margin-bottom: 22px;
+  }
+
+  .dot{
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--honey);
+    flex-shrink: 0;
+  }
+
+  .hero-grid{
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  @media (max-width: 880px){
+    .hero-grid{
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+
+  .hero-title{
+    font-size: clamp(2.4rem, 6vw, 4.1rem);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+  .hero-title .honey-highlight{
+    color: var(--honey);
+  }
+
+  .hero-lead{
+    font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+    color: var(--ink-soft);
+    margin: 22px 0 28px;
+    max-width: 54ch;
+    line-height: 1.6;
+  }
+
+  .hero-card{
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+  }
+
+  .hero-card img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    transition: transform 700ms cubic-bezier(.22,.61,.36,1);
+  }
+  .hero-card:hover img{
+    transform: scale(1.03);
+  }
+
+  .hero-card-caption{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px 20px 18px;
+    background: linear-gradient(180deg, transparent 0%, rgba(19,19,19,0.88) 100%);
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .hero-card-caption span{ font-weight: 600; }
+  .hero-card-caption small{ opacity: 0.82; font-size: 11.5px; }
+
+  /* -------- Stats Bento -------- */
+  .stats-bento{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 44px 0;
+  }
+
+  @media (max-width: 860px){
+    .stats-bento{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px){
+    .stats-bento{ grid-template-columns: 1fr; }
+  }
+
+  .stat-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 24px 22px;
+    box-shadow: var(--shadow-card);
+    position: relative;
+  }
+  .stat-card.highlight{
+    background: #141413;
+    color: #fff;
+    border-color: #141413;
+  }
+  .stat-num{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: clamp(2rem, 3.8vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-card.highlight .stat-num{
+    color: var(--honey);
+  }
+  .stat-lbl{
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .stat-card.highlight .stat-lbl{
+    color: rgba(255,255,255,0.55);
+  }
+  .stat-sub{
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .stat-card.highlight .stat-sub{
+    color: rgba(255,255,255,0.78);
+  }
+
+  /* -------- Section Shells -------- */
+  section{ padding: 48px 0; }
+
+  .section-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-bottom: 18px;
+  }
+  .section-tag::before{
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--honey);
+  }
+
+  .section-title{
+    font-size: clamp(1.8rem, 4.2vw, 2.7rem);
+    line-height: 1.08;
+    margin: 0 0 16px;
+  }
+
+  .section-sub{
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 64ch;
+    margin: 0 0 36px;
+  }
+
+  /* -------- Case Study Content Grid -------- */
+  .case-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 800px){
+    .case-grid{ grid-template-columns: 1fr; }
+  }
+
+  .case-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 30px 28px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .case-num{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 1.75rem;
+    color: var(--honey);
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+
+  .case-card h3{
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .case-card p{
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.62;
+    margin: 0;
+  }
+
+  /* -------- Video Highlight Frame -------- */
+  .video-container{
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: #000;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+    margin: 32px 0 44px;
+    position: relative;
+  }
+
+  .video-container video{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  .video-caption-bar{
+    padding: 18px 24px;
+    background: #141413;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13.5px;
+  }
+  .video-caption-bar span{ opacity: 0.85; }
+
+  /* -------- Field Media Grid -------- */
+  .field-media-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .media-item{
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+  }
+
+  .media-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 550ms cubic-bezier(.22,.61,.36,1);
+  }
+  .media-item:hover img{
+    transform: scale(1.04);
+  }
+
+  .media-overlay{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px 20px 16px;
+    background: linear-gradient(180deg, transparent 0%, rgba(19,19,19,0.88) 100%);
+    color: #fff;
+  }
+  .media-overlay h4{ font-size: 1.1rem; margin: 0 0 4px; font-weight: 700; }
+  .media-overlay p{ font-size: 12px; margin: 0; opacity: 0.82; }
+
+  .col-8{ grid-column: span 8; min-height: 440px; }
+  .col-4{ grid-column: span 4; min-height: 440px; }
+  .col-6{ grid-column: span 6; min-height: 420px; }
+
+  @media (max-width: 860px){
+    .col-8, .col-4, .col-6{ grid-column: span 12; min-height: 360px; }
+  }
+
+  /* -------- Quote Card -------- */
+  .field-quote{
+    background: #141413;
+    color: #fff;
+    border-radius: var(--radius-lg);
+    padding: clamp(32px, 6vw, 50px);
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+  }
+  .field-quote::before{
+    content: '“';
+    position: absolute;
+    top: -30px; right: 30px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 10rem;
+    color: rgba(217,130,43,0.18);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .field-quote p{
+    position: relative;
+    margin: 0;
+    font-size: clamp(1.15rem, 2.6vw, 1.55rem);
+    font-weight: 500;
+    font-family: 'Inter Tight', sans-serif;
+    max-width: 50ch;
+    line-height: 1.4;
+  }
+  .field-quote .author{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--honey);
+  }
+
+  /* -------- Upcoming Research / Expandable Modules -------- */
+  .future-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 24px;
+  }
+  @media (max-width: 860px){
+    .future-grid{ grid-template-columns: 1fr; }
+  }
+
+  .future-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 26px 24px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .future-badge{
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    width: fit-content;
+    margin-bottom: 14px;
+  }
+  .future-badge.active{
+    background: rgba(217,130,43,0.12);
+    color: var(--honey-dark);
+    border: 1px solid rgba(217,130,43,0.25);
+  }
+  .future-badge.archive{
+    background: rgba(19,19,19,0.06);
+    color: var(--ink-soft);
+  }
+  .future-badge.upcoming{
+    background: rgba(111,110,106,0.1);
+    color: var(--muted);
+  }
+
+  .future-card h4{
+    font-size: 1.15rem;
+    margin: 0 0 8px;
+  }
+  .future-card p{
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+
+  /* -------- Lightbox Modal -------- */
+  .lightbox{
+    position: fixed;
+    inset: 0;
+    background: rgba(19,19,19,0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: zoom-out;
+  }
+  .lightbox.active{ display: flex; }
+
+  .lightbox-content{
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lightbox-content img{
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .lightbox-caption{
+    color: #fff;
+    margin-top: 14px;
+    text-align: center;
+    max-width: 60ch;
+    font-size: 14px;
+  }
+  .lightbox-close{
+    position: absolute;
+    top: -40px; right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  /* -------- Footer -------- */
+  footer{
+    border-top: 1px solid var(--line);
+    padding: 40px 0 60px;
+    margin-top: 40px;
+  }
+  .footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .footer-inner a{ text-decoration: none; transition: color 200ms ease; }
+  .footer-inner a:hover{ color: var(--ink); }
+
+  :focus-visible{
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body id="top">
+
+<!-- Floating Nav Pill -->
+<div class="nav-shell">
+  <nav class="nav-pill" aria-label="Main Navigation">
+    <a href="/" class="brand">
+      <span class="brand-badge" aria-hidden="true">R</span>
+      <span>Shifa <span class="serif-accent">&middot; Research</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#panchgar">Lichur Modhu</a>
+      <a href="#insights">Value Chain</a>
+      <a href="#video">Field Video</a>
+      <a href="#gallery">Field Log</a>
+      <a href="#more">Archive</a>
+    </div>
+    <div class="nav-actions">
+      <a href="/terracotta-tales/" class="btn light" title="Terracotta Tales Showcase">Terracotta &rarr;</a>
+      <a href="/" class="btn" title="Back to Shifa Profile">&larr; Profile</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="chip reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Applied Economic Ethnography &middot; Rural Enterprise</span>
+          </div>
+
+          <h1 class="hero-title reveal d1">
+            Ground-Level Truths.<br>
+            <span class="serif-accent honey-highlight">Unseen Value Chains.</span>
+          </h1>
+
+          <p class="hero-lead reveal d2">
+            Fieldwork by <strong>Farzana Reza Shifa</strong> on informal micro-economies across Bangladesh. Investigating how nomadic producers, rural artisans, and independent entrepreneurs survive market asymmetries, seasonal shocks, and middleman capture.
+          </p>
+
+          <div class="reveal d3" style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="#panchgar" class="btn honey">Explore Panchagarh Study &darr;</a>
+            <a href="#video" class="btn light">Watch Field Footage</a>
+            <a href="/" class="btn light">&larr; Shifa CV &amp; Bio</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal d2">
+          <!-- Mandatory Fetch Priority for LCP per Modern Web Guidance -->
+          <img src="assets/shifa-beekeeping-frame.jpg" 
+               alt="Farzana Reza Shifa inspecting honeycomb frame in Panchagarh litchi orchard" 
+               fetchpriority="high" 
+               width="1200" height="1600">
+          <div class="hero-card-caption">
+            <div>
+              <span>Farzana Reza Shifa on-ground</span><br>
+              <small>Litchi orchard field apiary, Panchagarh, North Bengal</small>
+            </div>
+            <span>March Bloom</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BENTO -->
+  <section style="padding-top: 10px;">
+    <div class="wrap">
+      <div class="stats-bento">
+        <div class="stat-card highlight reveal">
+          <div class="stat-lbl">Featured Field Site</div>
+          <div class="stat-num">Panchagarh</div>
+          <div class="stat-sub">Northernmost border district; epicenter of seasonal commercial litchi bloom.</div>
+        </div>
+
+        <div class="stat-card reveal d1">
+          <div class="stat-lbl">Harvest Window</div>
+          <div class="stat-num">18–22 Days</div>
+          <div class="stat-sub">Hyper-seasonal floral nectar window before flower-drop occurs across the groves.</div>
+        </div>
+
+        <div class="stat-card reveal d2">
+          <div class="stat-lbl">Wholesale vs Retail</div>
+          <div class="stat-num">3.8&times; Gap</div>
+          <div class="stat-sub">Beekeepers receive ৳280–৳350/kg; urban retail commands ৳1,000–৳1,400/kg.</div>
+        </div>
+
+        <div class="stat-card reveal d3">
+          <div class="stat-lbl">Pollination Bonus</div>
+          <div class="stat-num">+25%</div>
+          <div class="stat-sub">Apiaries provide symbiotic pollination, increasing orchard fruit set without fee.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CASE STUDY: PANCHAGARH LICHUR MODHU -->
+  <section id="panchgar">
+    <div class="wrap">
+      <span class="section-tag reveal">Case Study 01 &middot; Field Investigation</span>
+      <h2 class="section-title reveal d1">Lichur Modhu: The Migratory Beekeepers of <span class="serif-accent honey-highlight">Panchagarh.</span></h2>
+      <p class="section-sub reveal d2">
+        Every spring, when hundreds of acres of commercial litchi orchards across Panchagarh burst into flower, an informal army of nomadic apiarists arrives with truckloads of beehive boxes. This is the unheralded micro-economy of unifloral litchi honey (*লিচুর মধু*).
+      </p>
+
+      <div class="case-grid">
+        <div class="case-card reveal">
+          <div class="case-num">01</div>
+          <h3>The Ecological &amp; Agrarian Symbiosis</h3>
+          <p>Orchard leasers and beekeepers operate an informal barter pact. The beekeepers place dozens of multi-tier wooden apiary boxes directly under the shady litchi canopy. While worker bees gather sweet nectar from the pale blossoms, their pollination activity boosts fruit set by 20% to 30%. Neither party charges the other a monetary fee—an unspoken, zero-cash agro-ecological alliance.</p>
+        </div>
+
+        <div class="case-card reveal d1">
+          <div class="case-num">02</div>
+          <h3>The Hyper-Compressed Harvest Window</h3>
+          <p>Unlike mustard honey (*Shorishar Modhu*) which blooms across winter, litchi flowers last barely three weeks. A single prolonged hailstorm or sudden heat wave can scorch the blossoms overnight. Beekeepers work around the clock, uncapping honeycomb frames with hot knives and spinning them in centrifugal extractors inside makeshift field tents.</p>
+        </div>
+
+        <div class="case-card reveal">
+          <div class="case-num">03</div>
+          <h3>Middleman Monopsony &amp; Distress Selling</h3>
+          <p>Because beekeepers must quickly migrate their colonies to Sundarbans or Dinajpur once the bloom ends, they cannot afford heavy drum storage or long-term logistics. Intermediaries from metropolitan processing brands capitalize on this urgency, buying raw honey in 40kg plastic barrels at distressed prices (৳250–৳350/kg), capturing the vast majority of consumer surplus.</p>
+        </div>
+
+        <div class="case-card reveal d1">
+          <div class="case-num">04</div>
+          <h3>The &ldquo;A Solid Modhu&rdquo; Micro-Retail Model</h3>
+          <p>In response to predatory middlemen, local beekeepers like Mahmud have begun piloting on-orchard retail stalls—putting up banners stating <em>&ldquo;Own farm 100% pure litchi honey&rdquo;</em> (এ সলিড মধু). By retailing directly to highway travelers and regional buyers at ৳600/kg, they double their margins while educating consumers on the natural crystallizing properties of raw litchi honey.</p>
+        </div>
+      </div>
+
+      <!-- FIELD QUOTE -->
+      <div class="field-quote reveal">
+        <p>&ldquo;When raw litchi honey crystallizes into a smooth, creamy texture in winter, urban buyers panic and accuse farmers of adding sugar. That single consumer misunderstanding gives corporate aggregators the excuse to over-heat and pasteurize honey—destroying the very enzymes people pay for.&rdquo;</p>
+        <div class="author">Field Notes &middot; Panchagarh Orchard Log</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO HIGHLIGHT SECTION -->
+  <section id="video" style="padding-top: 10px;">
+    <div class="wrap">
+      <span class="section-tag reveal">Primary Field Footage</span>
+      <h2 class="section-title reveal d1">On-Ground Apiary Inspection &middot; <span class="serif-accent">Panchagarh</span></h2>
+      <p class="section-sub reveal d2">
+        Direct participatory observation inside the litchi orchard: inspecting active hive frames, uncapping worker comb, and documenting colony health under the canopy.
+      </p>
+
+      <div class="video-container reveal">
+        <video controls poster="assets/field-shifa-beekeepers.jpg" preload="metadata" playsinline>
+          <source src="assets/panchagarh-field-inspection.mp4" type="video/mp4">
+          Your browser does not support HTML5 video playback.
+        </video>
+        <div class="video-caption-bar">
+          <div>
+            <strong>Field Apiary Documentation &middot; Panchagarh</strong><br>
+            <span>Farzana Reza Shifa &amp; local beekeepers examining colony frames in the grove</span>
+          </div>
+          <span style="font-family:monospace; font-size:12px; background:rgba(255,255,255,0.12); padding:4px 10px; border-radius:6px;">Full HD &middot; In-Field Camera</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIELD MEDIA & PHOTO LOG -->
+  <section id="gallery">
+    <div class="wrap">
+      <span class="section-tag reveal">Visual Field Log</span>
+      <h2 class="section-title reveal d1">Documenting the Colony &amp; the <span class="serif-accent">Blossom.</span></h2>
+      <p class="section-sub reveal d2">
+        Photographic documentation from the orchard floor, capturing beekeeping infrastructure, local signage, and worker bee colony health.
+      </p>
+
+      <div class="field-media-grid">
+        
+        <!-- Photo 1: Banner -->
+        <div class="media-item col-4 reveal" onclick="openLightbox('assets/solid-modhu-banner.jpg', 'Direct-to-Consumer Signage — A Solid Modhu (এ সলিড মধু) retail banner hoisted at the perimeter of the Panchagarh litchi orchard, advertising 100% pure litchi blossom honey directly from the apiary.')">
+          <img src="assets/solid-modhu-banner.jpg" alt="A Solid Modhu banner sign in orchard" loading="lazy">
+          <div class="media-overlay">
+            <h4>&ldquo;A Solid Modhu&rdquo; Farm Banner</h4>
+            <p>Direct farm-gate advertising bypassing metropolitan distributors.</p>
+          </div>
+        </div>
+
+        <!-- Video Loop 2: Active Bees on Comb -->
+        <div class="media-item col-8 reveal d1" style="overflow:hidden; cursor:default;">
+          <video autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover; display:block;">
+            <source src="assets/honeycomb-active-bees.mp4" type="video/mp4">
+          </video>
+          <div class="media-overlay">
+            <h4>Active Honeycomb Colony</h4>
+            <p>Worker bees depositing freshly gathered litchi nectar into hexagonal wax comb cells.</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Apiary Boxes under Trees -->
+        <div class="media-item col-6 reveal" onclick="openLightbox('assets/field-apiary-boxes.jpg', 'Field Apiary Layout — Wooden hive boxes arranged beneath the litchi tree canopy, shielded from direct midday sun.')">
+          <img src="assets/field-apiary-boxes.jpg" alt="Beekeeping hive boxes beneath trees" loading="lazy">
+          <div class="media-overlay">
+            <h4>Canopy Apiary Array</h4>
+            <p>Dozens of multi-tier wooden boxes strategically spaced to prevent colony disorientation.</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Inspection with Beekeepers -->
+        <div class="media-item col-6 reveal d1" onclick="openLightbox('assets/field-shifa-beekeepers.jpg', 'Participatory Observation — Shifa in protective netting documenting frame retrieval with local beekeepers.')">
+          <img src="assets/field-shifa-beekeepers.jpg" alt="Shifa and beekeepers inspecting beehive" loading="lazy">
+          <div class="media-overlay">
+            <h4>Participatory Observation</h4>
+            <p>Interviewing apiarists during the active morning extraction window.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING FIELD STUDIES / ARCHIVE -->
+  <section id="more">
+    <div class="wrap">
+      <span class="section-tag reveal">Research Portfolio</span>
+      <h2 class="section-title reveal d1">Field Studies &amp; Informal <span class="serif-accent">Economies.</span></h2>
+      <p class="section-sub reveal d2">
+        A living collection of applied economic and sociological fieldwork. More studies and datasets will be published here as field expeditions conclude.
+      </p>
+
+      <div class="future-grid">
+        
+        <!-- Card 1: Panchagarh -->
+        <div class="future-card reveal">
+          <div>
+            <span class="future-badge active">Active Case Study</span>
+            <h4>Lichur Modhu: Migratory Apiaries</h4>
+            <p>Investigating the seasonal micro-economics, wholesale margins, and value chain capture of unifloral litchi honey in Panchagarh, North Bengal.</p>
+          </div>
+          <a href="#panchgar" class="btn light" style="align-self: flex-start; padding: 7px 16px; font-size: 12px;">Read Study &uarr;</a>
+        </div>
+
+        <!-- Card 2: Terracotta Tales -->
+        <div class="future-card reveal d1">
+          <div>
+            <span class="future-badge archive">Applied Micro-Enterprise</span>
+            <h4>Terracotta Craft &amp; Potter Settlements</h4>
+            <p>First-hand venture ethnography: Direct sourcing from <em>pal para</em> artisans, zero-breakage packaging logistics, and generating ৳2.5L to self-fund university studies.</p>
+          </div>
+          <a href="/terracotta-tales/" class="btn light" style="align-self: flex-start; padding: 7px 16px; font-size: 12px;">View Showcase &rarr;</a>
+        </div>
+
+        <!-- Card 3: Upcoming -->
+        <div class="future-card reveal d2" style="border-style: dashed; background: rgba(255,255,255,0.6);">
+          <div>
+            <span class="future-badge upcoming">In Fieldwork / Upcoming</span>
+            <h4>Women&rsquo;s Financial Inclusion &amp; Micro-Retail</h4>
+            <p>Documenting how female micro-entrepreneurs navigate microfinance repayment schedules, emergency liquidity, and household bargaining power.</p>
+          </div>
+          <span style="font-size: 12px; color: var(--faint); font-weight: 600;">Field log publishing soon &middot; 2026</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)" role="dialog" aria-modal="true" aria-label="Image Preview">
+  <div class="lightbox-content">
+    <button type="button" class="lightbox-close" onclick="closeLightboxDirect()" aria-label="Close image preview">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong>Field Research Portfolio</strong> &middot; <a href="/" style="font-weight:600; text-decoration:underline;">Farzana Reza Shifa</a> (SUST Sociology)
+    </div>
+    <div>
+      <a href="/research/" style="font-weight:600;">&larr; All research</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+
+  function openLightbox(src, caption) {
+    lightboxImg.src = src;
+    lightboxImg.alt = caption;
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox(e) {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+      closeLightboxDirect();
+    }
+  }
+
+  function closeLightboxDirect() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightboxDirect();
+    }
+  });
+</script>
+
+</body>
+</html>

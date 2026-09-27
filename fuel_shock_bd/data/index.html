@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data &amp; method — including what doesn’t work yet · r1_Fuel</title>
+<meta name="description" content="Everything r1_Fuel has built: the impact analysis, the full audit log, a 1,996-article bilingual news corpus, the discourse pipeline and its validation failures, and the data anyone can reuse without collecting anything.">
+<link rel="canonical" href="https://farzana.sch.ac/fuel_shock_bd/data/">
+
+<meta property="og:title" content="Everything, including what doesn’t work yet.">
+<meta property="og:description" content="Everything r1_Fuel has built: the impact analysis, the full audit log, a 1,996-article bilingual news corpus, the discourse pipeline and its validation failures, and the data anyone can reuse without collecting anything.">
+<meta property="og:url" content="https://farzana.sch.ac/fuel_shock_bd/data/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Farzana Reza Shifa — Research">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Everything, including what doesn’t work yet.">
+<meta name="twitter:description" content="Everything r1_Fuel has built: the impact analysis, the full audit log, a 1,996-article bilingual news corpus, the discourse pipeline and its validation failures, and the data anyone can reuse without collecting anything.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23131313'/%3E%3Crect x='28' y='28' width='44' height='44' fill='none' stroke='%23FF4A1F' stroke-width='7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div class="nav-shell">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/research/">
+      <span class="mark" aria-hidden="true"></span>
+      <span>r1_Fuel</span>
+      <span class="sub">Farzana Reza Shifa &middot; Research</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="/fuel_shock_bd/">Overview</a>
+      <a href="/fuel_shock_bd/findings/">The analysis</a>
+      <a href="/fuel_shock_bd/proposal/">Research plan</a>
+      <a href="/fuel_shock_bd/collaborate/">Collaborate</a>
+      <a href="/fuel_shock_bd/support/">Fund it</a>
+      <a href="/fuel_shock_bd/data/" class="active" aria-current="page">Data & method</a>
+      <a href="/fuel_shock_bd/status/">Status</a>
+    </nav>
+  </div>
+</div>
+
+
+<header class="hero" style="padding-bottom:20px;">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Data &amp; method</div>
+    <h1 class="display">Everything, including<br><span class="serif">what doesn&rsquo;t work yet.</span></h1>
+    <p class="lede">
+      Every figure on this site traces to either a cited source or a derivation shown inline. Every derived number is
+      marked <span class="est">est.</span> Every pipeline that produces a number here also has a section below
+      explaining where it fails. That is not modesty &mdash; it is so that a collaborator can price the work honestly
+      before joining, and a reader can tell a measurement from a guess.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="/fuel_shock_bd/data/log/">The full audit log</a>
+      <a class="btn btn-ghost" href="/fuel_shock_bd/data/Bangladesh_Fuel_Hike_Impact_2026.pdf">Illustrated PDF report</a>
+      <a class="btn btn-ghost" href="https://github.com/the-abraar/FuelPriceHikeImpactResearch">Code &amp; outputs</a>
+    </div>
+  </div>
+</header>
+
+<section style="padding-top:12px;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">What&rsquo;s published</div>
+      <h2>Four artefacts, all public</h2>
+    </div>
+    <div class="grid g4">
+      <div class="card">
+        <span class="tag accent">Analysis</span>
+        <h3 style="font-size:18px;margin-top:12px;">The impact analysis</h3>
+        <p class="muted small" style="margin-top:10px;">Inflation, fares, agriculture, industry, power, macro and the distributional wedge, with policy levers ranked by effect per taka.</p>
+        <p class="small" style="margin-top:12px;"><a href="/fuel_shock_bd/findings/" style="color:var(--accent);text-decoration:none;">Read &rarr;</a></p>
+      </div>
+      <div class="card">
+        <span class="tag accent">Audit</span>
+        <h3 style="font-size:18px;margin-top:12px;">Research pass 1</h3>
+        <p class="muted small" style="margin-top:10px;">The working file: the originating question, every search run, every figure extracted with its source, and every derived calculation.</p>
+        <p class="small" style="margin-top:12px;"><a href="/fuel_shock_bd/data/log/" style="color:var(--accent);text-decoration:none;">Read &rarr;</a></p>
+      </div>
+      <div class="card">
+        <span class="tag accent">Corpus</span>
+        <h3 style="font-size:18px;margin-top:12px;">P4 discourse corpus</h3>
+        <p class="muted small" style="margin-top:10px;">1,996 fuel articles across three outlets and two shock windows, with frame flags, plus the pipeline that produced them.</p>
+        <p class="small" style="margin-top:12px;"><a href="#p4" style="color:var(--accent);text-decoration:none;">Details &rarr;</a></p>
+      </div>
+      <div class="card">
+        <span class="tag accent">Designs</span>
+        <h3 style="font-size:18px;margin-top:12px;">Five study designs</h3>
+        <p class="muted small" style="margin-top:10px;">Questions, sampling, instruments, analysis plans, budgets and ethics for P1 through P5.</p>
+        <p class="small" style="margin-top:12px;"><a href="/fuel_shock_bd/proposal/" style="color:var(--accent);text-decoration:none;">Read &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="conventions">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Conventions</div>
+      <h2>How to read a number on this site</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h3 style="font-size:18px;">Cited figures</h3>
+        <p class="muted small" style="margin-top:10px;font-size:14.5px;">Unmarked numbers are reported figures with a source link in the analysis. Prices, BPC balances, CPI prints, gazette values and quoted statements all sit here.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px;">Derived figures <span class="est">est.</span></h3>
+        <p class="muted small" style="margin-top:10px;font-size:14.5px;">This project&rsquo;s own arithmetic from cited inputs, with the method shown inline. They are not sourced claims and should not be quoted as if they were. Work-time per litre, per-bigha irrigation cost, the CPI decomposition and the scenario probabilities are all of this kind.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px;">Internal cross-checks</h3>
+        <p class="muted small" style="margin-top:10px;font-size:14.5px;">Where possible a derivation is checked against an independent reported figure. Implied diesel throughput of ~12.2 million litres a day, derived from BPC&rsquo;s stated per-litre loss, reconciles with the government&rsquo;s own claimed ~Tk 10,000 crore annual saving &mdash; which is a reason to trust both.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="p4">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">P4 &middot; Discourse corpus</div>
+      <h2>1,996 articles, a working pipeline, and a classifier that isn&rsquo;t good enough</h2>
+      <p>
+        P4 needs no fieldwork, so it started immediately. The corpus and infrastructure are real. The frame classifier
+        is a keyword dictionary, and the validation below is the reason its frame shares are presented as pipeline
+        output rather than as findings.
+      </p>
+    </div>
+
+    <div class="grid g4" style="margin-bottom:34px;">
+      <div class="stat"><div class="val accent">1,996</div><div class="lbl">Articles collected</div><div class="note">20 Jul 2022 &ndash; 21 Sep 2026, all passing the fuel-relevance filter.</div></div>
+      <div class="stat"><div class="val">1,476</div><div class="lbl">Bangla / 520 English</div><div class="note">Prothom Alo 1,092 &middot; Daily Star 520 &middot; Samakal 384.</div></div>
+      <div class="stat"><div class="val">2</div><div class="lbl">Shock windows</div><div class="note">561 articles around the 2022 record hike; 1,435 across March&ndash;September 2026.</div></div>
+      <div class="stat"><div class="val">186</div><div class="lbl">Coding sample</div><div class="note">Stratified by language and period, awaiting two human coders.</div></div>
+    </div>
+
+    <div class="loop-fig" style="margin-bottom:38px;">
+      <div style="font-family:'Inter Tight',sans-serif;font-weight:700;font-size:17px;margin-bottom:4px;">Fuel coverage, articles per week</div>
+      <div class="small muted" style="margin-bottom:20px;">The corpus itself, plotted. Hover any point for that week&rsquo;s count.</div>
+      <svg viewBox="0 0 760 300" width="100%" role="img" aria-label="Weekly counts of fuel-related articles. In 2022 coverage peaks at 165 articles in the week of the record hike and decays over the following month. In 2026 coverage runs far higher through March and April, peaking at 189 in early April, then settles to 15–30 a week through the summer before lifting again in September." preserveAspectRatio="xMidYMid meet">
+  <line x1="46" y1="228.0" x2="732" y2="228.0" stroke="#E6E4DE" stroke-width="1"/>
+  <text x="40" y="232.0" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#A5A39D">0</text>
+  <line x1="46" y1="186.5" x2="732" y2="186.5" stroke="#E6E4DE" stroke-width="1"/>
+  <text x="40" y="190.5" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#A5A39D">50</text>
+  <line x1="46" y1="145.0" x2="732" y2="145.0" stroke="#E6E4DE" stroke-width="1"/>
+  <text x="40" y="149.0" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#A5A39D">100</text>
+  <line x1="46" y1="103.5" x2="732" y2="103.5" stroke="#E6E4DE" stroke-width="1"/>
+  <text x="40" y="107.5" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#A5A39D">150</text>
+  <line x1="46" y1="62.0" x2="732" y2="62.0" stroke="#E6E4DE" stroke-width="1"/>
+  <text x="40" y="66.0" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#A5A39D">200</text>
+  <text x="46" y="26" font-family="Inter Tight, Inter, sans-serif" font-size="14" font-weight="700" fill="#131313">2022</text>
+  <text x="90" y="26" font-family="Inter, sans-serif" font-size="12" fill="#6F6E6A">9 weeks &middot; 561 articles</text>
+  <line x1="102.3" y1="56" x2="102.3" y2="228" stroke="#FF4A1F" stroke-width="1" stroke-dasharray="3 3" opacity="0.55"/>
+  <text x="102.3" y="51" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#FF4A1F">record hike</text>
+  <path d="M46,228 L46.0,212.2 L64.8,193.1 L83.5,91.1 L102.3,135.0 L121.0,174.1 L139.8,187.3 L158.5,173.2 L177.3,201.4 L196.0,218.9 L196.0,228 Z" fill="#FF4A1F" opacity="0.10"/>
+  <path d="M46.0,212.2 L64.8,193.1 L83.5,91.1 L102.3,135.0 L121.0,174.1 L139.8,187.3 L158.5,173.2 L177.3,201.4 L196.0,218.9" fill="none" stroke="#FF4A1F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="46.0" cy="212.2" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-07-18: 19 articles</title></circle>
+  <circle cx="64.8" cy="193.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-07-25: 42 articles</title></circle>
+  <circle cx="83.5" cy="91.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-08-01: 165 articles</title></circle>
+  <circle cx="102.3" cy="135.0" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-08-08: 112 articles</title></circle>
+  <circle cx="121.0" cy="174.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-08-15: 65 articles</title></circle>
+  <circle cx="139.8" cy="187.3" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-08-22: 49 articles</title></circle>
+  <circle cx="158.5" cy="173.2" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-08-29: 66 articles</title></circle>
+  <circle cx="177.3" cy="201.4" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-09-05: 32 articles</title></circle>
+  <circle cx="196.0" cy="218.9" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2022-09-12: 11 articles</title></circle>
+  <line x1="46" y1="228" x2="196.0" y2="228" stroke="#131313" stroke-width="1"/>
+  <text x="46" y="246" text-anchor="start" font-family="Inter, sans-serif" font-size="11" fill="#6F6E6A">18 Jul</text>
+  <text x="196.0" y="246" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#6F6E6A">12 Sept</text>
+  <text x="262" y="26" font-family="Inter Tight, Inter, sans-serif" font-size="14" font-weight="700" fill="#131313">2026</text>
+  <text x="306" y="26" font-family="Inter, sans-serif" font-size="12" fill="#6F6E6A">31 weeks &middot; 1,435 articles</text>
+  <line x1="387.3" y1="56" x2="387.3" y2="228" stroke="#FF4A1F" stroke-width="1" stroke-dasharray="3 3" opacity="0.55"/>
+  <text x="387.3" y="51" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#FF4A1F">Apr hike</text>
+  <line x1="481.3" y1="56" x2="481.3" y2="228" stroke="#FF4A1F" stroke-width="1" stroke-dasharray="3 3" opacity="0.55"/>
+  <text x="481.3" y="51" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#FF4A1F">Jun hike</text>
+  <line x1="732.0" y1="56" x2="732.0" y2="228" stroke="#FF4A1F" stroke-width="1" stroke-dasharray="3 3" opacity="0.55"/>
+  <text x="732.0" y="51" text-anchor="end" font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#FF4A1F">Sep hike + pay scale</text>
+  <path d="M262,228 L262.0,225.5 L277.7,164.1 L293.3,120.9 L309.0,195.6 L324.7,109.3 L340.3,71.1 L356.0,146.7 L371.7,135.0 L387.3,138.4 L403.0,187.3 L418.7,202.3 L434.3,204.8 L450.0,205.6 L465.7,213.1 L481.3,205.6 L497.0,213.9 L512.7,211.4 L528.3,215.6 L544.0,209.7 L559.7,213.9 L575.3,216.4 L591.0,205.6 L606.7,206.4 L622.3,203.9 L638.0,203.1 L653.7,212.2 L669.3,214.7 L685.0,206.4 L700.7,194.0 L716.3,205.6 L732.0,218.9 L732.0,228 Z" fill="#FF4A1F" opacity="0.10"/>
+  <path d="M262.0,225.5 L277.7,164.1 L293.3,120.9 L309.0,195.6 L324.7,109.3 L340.3,71.1 L356.0,146.7 L371.7,135.0 L387.3,138.4 L403.0,187.3 L418.7,202.3 L434.3,204.8 L450.0,205.6 L465.7,213.1 L481.3,205.6 L497.0,213.9 L512.7,211.4 L528.3,215.6 L544.0,209.7 L559.7,213.9 L575.3,216.4 L591.0,205.6 L606.7,206.4 L622.3,203.9 L638.0,203.1 L653.7,212.2 L669.3,214.7 L685.0,206.4 L700.7,194.0 L716.3,205.6 L732.0,218.9" fill="none" stroke="#FF4A1F" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="262.0" cy="225.5" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-02-23: 3 articles</title></circle>
+  <circle cx="277.7" cy="164.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-03-02: 77 articles</title></circle>
+  <circle cx="293.3" cy="120.9" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-03-09: 129 articles</title></circle>
+  <circle cx="309.0" cy="195.6" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-03-16: 39 articles</title></circle>
+  <circle cx="324.7" cy="109.3" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-03-23: 143 articles</title></circle>
+  <circle cx="340.3" cy="71.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-03-30: 189 articles</title></circle>
+  <circle cx="356.0" cy="146.7" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-04-06: 98 articles</title></circle>
+  <circle cx="371.7" cy="135.0" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-04-13: 112 articles</title></circle>
+  <circle cx="387.3" cy="138.4" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-04-20: 108 articles</title></circle>
+  <circle cx="403.0" cy="187.3" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-04-27: 49 articles</title></circle>
+  <circle cx="418.7" cy="202.3" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-05-04: 31 articles</title></circle>
+  <circle cx="434.3" cy="204.8" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-05-11: 28 articles</title></circle>
+  <circle cx="450.0" cy="205.6" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-05-18: 27 articles</title></circle>
+  <circle cx="465.7" cy="213.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-05-25: 18 articles</title></circle>
+  <circle cx="481.3" cy="205.6" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-06-01: 27 articles</title></circle>
+  <circle cx="497.0" cy="213.9" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-06-08: 17 articles</title></circle>
+  <circle cx="512.7" cy="211.4" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-06-15: 20 articles</title></circle>
+  <circle cx="528.3" cy="215.6" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-06-22: 15 articles</title></circle>
+  <circle cx="544.0" cy="209.7" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-06-29: 22 articles</title></circle>
+  <circle cx="559.7" cy="213.9" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-07-06: 17 articles</title></circle>
+  <circle cx="575.3" cy="216.4" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-07-13: 14 articles</title></circle>
+  <circle cx="591.0" cy="205.6" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-07-20: 27 articles</title></circle>
+  <circle cx="606.7" cy="206.4" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-07-27: 26 articles</title></circle>
+  <circle cx="622.3" cy="203.9" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-08-03: 29 articles</title></circle>
+  <circle cx="638.0" cy="203.1" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-08-10: 30 articles</title></circle>
+  <circle cx="653.7" cy="212.2" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-08-17: 19 articles</title></circle>
+  <circle cx="669.3" cy="214.7" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-08-24: 16 articles</title></circle>
+  <circle cx="685.0" cy="206.4" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-08-31: 26 articles</title></circle>
+  <circle cx="700.7" cy="194.0" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-09-07: 41 articles</title></circle>
+  <circle cx="716.3" cy="205.6" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-09-14: 27 articles</title></circle>
+  <circle cx="732.0" cy="218.9" r="3" fill="#FFFFFF" stroke="#FF4A1F" stroke-width="1.6"><title>Week of 2026-09-21: 11 articles</title></circle>
+  <line x1="262" y1="228" x2="732.0" y2="228" stroke="#131313" stroke-width="1"/>
+  <text x="262" y="246" text-anchor="start" font-family="Inter, sans-serif" font-size="11" fill="#6F6E6A">23 Feb</text>
+  <text x="732.0" y="246" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#6F6E6A">21 Sept</text>
+  <text x="46" y="292" font-family="Inter, sans-serif" font-size="11" fill="#A5A39D">Articles per week, all three outlets pooled. Edge weeks are partial: the 2026 series ends on 21 September, a single day.</text>
+</svg>
+      <p class="fig-cap">
+        Two things worth noticing. <strong>2022 behaves the way you would expect</strong> &mdash; coverage spikes to 165
+        articles in the week of the record hike, then decays over a month. <strong>2026 does not.</strong> Volume was
+        already far higher through March and April, driven by the Hormuz shock and loadshedding rather than by any
+        single price decision, and by September a Tk 20 hike arriving two days after the pay-scale gazette barely lifts
+        it above the summer baseline. Whether that is fatigue, saturation or something about how the September
+        decisions were covered is exactly the sort of question the frame classifier is supposed to answer &mdash; and
+        currently cannot.
+      </p>
+    </div>
+
+    <h3 style="font-size:21px;margin-bottom:8px;">How the classifier actually performs</h3>
+    <p class="muted" style="max-width:740px;margin-bottom:22px;font-size:15px;">
+      Measured against a single-coder pass over Bangladesh-relevant articles (n = 113). One frame is usable, two are
+      borderline, and five are not. <strong>Government failure recovers only 23% of the cases it should</strong> &mdash;
+      it misses opposition and criticism language almost entirely &mdash; and apology/empathy recovers 12%.
+    </p>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>Frame</th><th class="num">Precision</th><th class="num">Recall</th><th class="num">F1</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>protest</strong></td>
+            <td class="num mono">0.90</td>
+            <td class="num mono">1.00</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:95%;height:100%;background:var(--accent);"></span></span>
+              <span style="font-weight:700;">0.95</span></span></td>
+            <td><span class="tag ok">Usable</span></td>
+          </tr>
+          <tr>
+            <td><strong>fairness &amp; pay scale</strong></td>
+            <td class="num mono">0.63</td>
+            <td class="num mono">0.83</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:71%;height:100%;background:var(--accent);"></span></span>
+              <span style="font-weight:700;">0.71</span></span></td>
+            <td><span class="tag warn">Borderline</span></td>
+          </tr>
+          <tr>
+            <td><strong>global market</strong></td>
+            <td class="num mono">0.74</td>
+            <td class="num mono">0.68</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:71%;height:100%;background:var(--accent);"></span></span>
+              <span style="font-weight:700;">0.71</span></span></td>
+            <td><span class="tag warn">Borderline</span></td>
+          </tr>
+          <tr>
+            <td><strong>corruption / syndicate</strong></td>
+            <td class="num mono">0.67</td>
+            <td class="num mono">0.50</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:57%;height:100%;background:#A5A39D;"></span></span>
+              <span style="font-weight:700;">0.57</span></span></td>
+            <td><span class="tag ">Not usable</span></td>
+          </tr>
+          <tr>
+            <td><strong>fiscal loss</strong></td>
+            <td class="num mono">0.38</td>
+            <td class="num mono">0.71</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:49%;height:100%;background:#A5A39D;"></span></span>
+              <span style="font-weight:700;">0.49</span></span></td>
+            <td><span class="tag ">Not usable</span></td>
+          </tr>
+          <tr>
+            <td><strong>India</strong></td>
+            <td class="num mono">0.33</td>
+            <td class="num mono">0.80</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:47%;height:100%;background:#A5A39D;"></span></span>
+              <span style="font-weight:700;">0.47</span></span></td>
+            <td><span class="tag ">Not usable</span></td>
+          </tr>
+          <tr>
+            <td><strong>government failure</strong></td>
+            <td class="num mono">0.78</td>
+            <td class="num mono">0.23</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:36%;height:100%;background:#A5A39D;"></span></span>
+              <span style="font-weight:700;">0.36</span></span></td>
+            <td><span class="tag ">Not usable</span></td>
+          </tr>
+          <tr>
+            <td><strong>apology / empathy</strong></td>
+            <td class="num mono">0.50</td>
+            <td class="num mono">0.13</td>
+            <td class="num mono"><span style="display:inline-flex;align-items:center;gap:8px;justify-content:flex-end;">
+              <span style="display:inline-block;width:64px;height:7px;background:var(--line);border-radius:4px;overflow:hidden;"><span style="display:block;width:20%;height:100%;background:#A5A39D;"></span></span>
+              <span style="font-weight:700;">0.20</span></span></td>
+            <td><span class="tag ">Not usable</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:16px;max-width:760px;">
+      And the comparison itself is weak: one coder, reading truncated text, who also helped design the dictionary and
+      the codebook. It shows where the dictionary is weak; it certifies nothing. Getting to kappa above 0.7 needs two
+      independent human coders, and getting the frames usable needs a BanglaBERT-class model.
+    </p>
+
+    <div class="grid g2" style="margin-top:36px;">
+      <div class="card">
+        <h3 style="font-size:19px;">How the corpus was collected</h3>
+        <ul class="check" style="margin-top:14px;">
+          <li><strong>Prothom Alo</strong> &mdash; public search API, four fuel queries by month chunk, full text in response, relevance-ranked to 200 per query-month then regex filtered</li>
+          <li><strong>Samakal</strong> &mdash; daily sitemaps with a Bangla slug and caption filter</li>
+          <li><strong>The Daily Star</strong> &mdash; yearly sitemaps with an English slug filter and <span class="mono">lastmod</span> inside the window</li>
+          <li>Windows: 20 Jul &ndash; 15 Sep 2022 around the record hike; 1 Mar &ndash; 21 Sep 2026 across three hikes, the PM&rsquo;s 5 September apology and the 19 September pay-scale gazette</li>
+          <li>Honest user agent, robots.txt and crawl-delay respected, at least 1.5 s between requests per host, responses cached</li>
+          <li>Article text is copyrighted and stays unpublished. Only metadata and frame flags are committed</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:19px;">Where it is biased, stated plainly</h3>
+        <ul class="check" style="margin-top:14px;">
+          <li class="off">Three outlets, all Dhaka-centred and centrist or pro-establishment. This is <strong>not</strong> &ldquo;Bangla public discourse&rdquo;</li>
+          <li class="off">Prothom Alo dominates by volume because its API returns full text while sitemap routes are lossier, so pooled Bangla shares are largely one outlet</li>
+          <li class="off">Sitemap-based sources only recover articles whose slug or caption names a fuel term, and miss articles updated after the window</li>
+          <li class="off">Presence is not stance: an article rebutting a claim still scores its frame</li>
+          <li class="off">About 39% of the &ldquo;about fuel&rdquo; corpus is not about Bangladesh &mdash; wire market reports, other countries &mdash; which inflates the global-market frame unless filtered first</li>
+          <li class="off">Period comparison is uncontrolled: eight weeks in 2022 against seven months of overlapping shocks in 2026. Differences are descriptive only</li>
+          <li class="off">No Facebook, YouTube, parliamentary debates, Jugantor, Kaler Kantho or TBS yet</li>
+          <li class="off">Protest is a news-mention proxy, not an ACLED event count</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px;">
+      <h3 style="font-size:19px;">Download the outputs</h3>
+      <p class="muted small" style="margin-top:10px;font-size:14.5px;">
+        Served straight off this site &mdash; no account, no request. Article text is not included in any of them.
+      </p>
+      <div class="table-wrap" style="margin-top:16px;">
+        <table class="data">
+          <thead><tr><th style="width:38%;">File</th><th>What it holds</th><th class="num">Size</th></tr></thead>
+          <tbody>
+            <tr><td class="small"><a href="/fuel_shock_bd/p4_discourse/out/articles_with_frames.csv" style="color:var(--accent);text-decoration:none;">articles_with_frames.csv</a></td><td class="small muted">All 1,996 articles: URL, date, source, language, window, headline and every frame flag with the terms that triggered it.</td><td class="num mono">972 KB</td></tr>
+            <tr><td class="small"><a href="/fuel_shock_bd/p4_discourse/out/frame_shares_by_period.csv" style="color:var(--accent);text-decoration:none;">frame_shares_by_period.csv</a></td><td class="small muted">Frame shares by language and period with Wilson confidence intervals. Pipeline output, not findings &mdash; read the table above first.</td><td class="num mono">10 KB</td></tr>
+            <tr><td class="small"><a href="/fuel_shock_bd/p4_discourse/out/validation_C_bd.csv" style="color:var(--accent);text-decoration:none;">validation_C_bd.csv</a></td><td class="small muted">The validation run behind the table above, restricted to Bangladesh-relevant articles.</td><td class="num mono">&lt;1 KB</td></tr>
+            <tr><td class="small"><a href="/fuel_shock_bd/p4_discourse/out/topics_exploratory.md" style="color:var(--accent);text-decoration:none;">topics_exploratory.md</a></td><td class="small muted">Exploratory NMF topics. Genuinely exploratory &mdash; not interpreted anywhere.</td><td class="num mono">2 KB</td></tr>
+            <tr><td class="small"><a href="/fuel_shock_bd/p4_discourse/codebook.md" style="color:var(--accent);text-decoration:none;">codebook.md</a></td><td class="small muted">Frame definitions and the coding protocol, for anyone willing to be one of the two human coders.</td><td class="num mono">3 KB</td></tr>
+            <tr><td class="small"><a href="/fuel_shock_bd/p4_discourse/README.md" style="color:var(--accent);text-decoration:none;">p4_discourse/README.md</a></td><td class="small muted">The pipeline's own notes on collection, politeness, validation status and known limits.</td><td class="num mono">5 KB</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted" style="margin-top:14px;">
+        The pipeline&rsquo;s raw matplotlib figures are also on the server &mdash;
+        <a href="/fuel_shock_bd/p4_discourse/out/volume_timeline.png" style="color:var(--accent);text-decoration:none;">volume_timeline.png</a> and
+        <a href="/fuel_shock_bd/p4_discourse/out/frames_by_period.png" style="color:var(--accent);text-decoration:none;">frames_by_period.png</a>
+        &mdash; with the per-outlet breakdown the chart above pools together.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:24px;">
+      <h3 style="font-size:19px;">Reproduce it</h3>
+      <pre style="background:#16161A;color:#E8E6E1;padding:20px;border-radius:12px;overflow-x:auto;font-size:13px;line-height:1.6;margin:16px 0 0;"><code>uv venv .venv &amp;&amp; uv pip install requests lxml beautifulsoup4 pandas numpy scikit-learn matplotlib
+
+cd p4_discourse/src
+../../.venv/bin/python collect.py    # ~1 h, rate-limited; --sources / --windows / --limit
+../../.venv/bin/python analyze.py    # tables and figures -> ../out/
+../../.venv/bin/python validate.py --coders C --bd-only</code></pre>
+      <p class="small muted" style="margin-top:14px;">
+        Outputs: <span class="mono">volume_timeline.png</span>, <span class="mono">frames_by_period.png</span>,
+        <span class="mono">frame_shares_by_period.csv</span> (with Wilson intervals),
+        <span class="mono">topics_exploratory.md</span>, <span class="mono">articles_with_frames.csv</span> &mdash;
+        URL, date, headline and frame flags, no article text.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="reuse">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Reuse</div>
+      <h2>Data you can work with without collecting anything</h2>
+      <p>
+        If you want to test something on this shock this week, these are the shortest routes in. Several of them also
+        happen to be the partnership asks on the <a href="/fuel_shock_bd/collaborate/" style="color:var(--accent)">collaborate page</a>.
+      </p>
+    </div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th style="width:32%;">Source</th><th style="width:44%;">What it gives you</th><th>Access</th></tr></thead>
+        <tbody>
+          <tr><td class="small">BBS <strong>HIES 2022</strong> microdata</td><td class="small muted">Baseline spending shares on fuel, transport and kerosene by decile and district</td><td class="small">BBS request / World Bank Microdata Library</td></tr>
+          <tr><td class="small">BBS <strong>Labour Force Survey</strong> (quarterly)</td><td class="small muted">Sector of employment, informality, wages</td><td class="small">BBS</td></tr>
+          <tr><td class="small">BBS <strong>CPI</strong> (monthly, divisional)</td><td class="small muted">Pass-through timing by item &mdash; the series that will show the October break</td><td class="small">Public releases</td></tr>
+          <tr><td class="small">BPC price gazettes, <strong>BERC</strong> orders, Ministry of Finance duty data</td><td class="small muted">Price and duty series, including the Tk 32.44/L diesel duty</td><td class="small">Public</td></tr>
+          <tr><td class="small"><strong>BIGD / PPRC</strong> COVID-era phone panels</td><td class="small muted">A proven design, and possibly a sampling frame to re-contact</td><td class="small">Partnership</td></tr>
+          <tr><td class="small"><strong>SANEM</strong> household surveys</td><td class="small muted">Recent welfare baselines, including the 2023 inflation-coping survey</td><td class="small">Partnership</td></tr>
+          <tr><td class="small"><strong>ACLED</strong> and news archives</td><td class="small muted">Protest event data, 2022&ndash;2026</td><td class="small">Free registration</td></tr>
+          <tr><td class="small">DAE / BADC</td><td class="small muted">Boro area targets versus actuals; irrigation equipment counts</td><td class="small">Request</td></tr>
+          <tr><td class="small"><strong>Google Trends</strong>, Meta Content Library</td><td class="small muted">Search and discussion signals</td><td class="small">Public / application</td></tr>
+          <tr><td class="small">Night-lights (VIIRS)</td><td class="small muted">A usable proxy for loadshedding by district</td><td class="small">Free</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="cite">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Use it</div>
+      <h2>Citing, correcting, reusing</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <h3 style="font-size:18px;">Cite it like this</h3>
+        <div class="copy-field" style="margin-top:12px;display:block;line-height:1.7;">
+          BlankFrame Research (2026). <em>r1_Fuel: Bangladesh Fuel Price Hike &mdash; Impact Analysis and Research
+          Programme.</em> farzana.sch.ac/fuel_shock_bd/ (mirror of blankframe.tech/research/r1_Fuel/)
+        </div>
+        <p class="small muted" style="margin-top:12px;">It is not peer-reviewed. Cite it as a working analysis, and cite the underlying newspaper sources directly where you can.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px;">Corrections</h3>
+        <p class="muted small" style="margin-top:10px;font-size:14.5px;">
+          A wrong number here is worth more to the project than agreement. Open an issue, or email with the figure and
+          what you think it should be. Corrections are logged in public on the
+          <a href="/fuel_shock_bd/status/" style="color:var(--accent);">status page</a>, not quietly patched.
+        </p>
+        <p class="small" style="margin-top:12px;"><a href="https://github.com/the-abraar/FuelPriceHikeImpactResearch/issues" style="color:var(--accent);text-decoration:none;">Open an issue &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:18px;">Known caveat worth repeating</h3>
+        <p class="muted small" style="margin-top:10px;font-size:14.5px;">
+          Some outlets call 21 September the government&rsquo;s <em>second</em> hike of 2026. This analysis counts three
+          since March, because the June change of Tk 5 applied only to petrol and octane. For diesel and kerosene it is
+          the second. Word it accordingly if you quote the count.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div style="font-family:'Inter Tight',sans-serif;font-weight:700;letter-spacing:-0.03em;color:var(--ink);font-size:17px;">r1_Fuel</div>
+        <div class="small" style="margin-top:6px;">An open research programme on Bangladesh's 2026 fuel shock.</div>
+        <div class="small" style="margin-top:6px;">Analysis dated 21 September 2026.</div>
+      </div>
+      <div class="flinks">
+        <a href="/fuel_shock_bd/findings/">The analysis</a>
+        <a href="/fuel_shock_bd/proposal/">Research plan</a>
+        <a href="/fuel_shock_bd/collaborate/">Collaborate</a>
+        <a href="/fuel_shock_bd/support/">Fund it</a>
+        <a href="/fuel_shock_bd/data/">Data &amp; method</a>
+        <a href="/fuel_shock_bd/data/log/">Audit log</a>
+        <a href="https://github.com/the-abraar/FuelPriceHikeImpactResearch">Source repo</a>
+        <a href="mailto:hello@blankframe.tech?subject=r1_Fuel">Email</a>
+        <a href="/">Farzana Reza Shifa</a>
+        <a href="https://www.blankframe.tech/research/r1_Fuel/">Original: BlankFrame</a>
+      </div>
+    </div>
+    <p class="fnote">
+      Figures marked <span class="est">est.</span> are this project's own calculations from cited inputs, with the
+      method shown inline; everything else is sourced and linked. Nothing here is peer-reviewed. Corrections are
+      welcome and will be logged &mdash; open an issue on the
+      <a href="https://github.com/the-abraar/FuelPriceHikeImpactResearch">repository</a> or email
+      <a href="mailto:hello@blankframe.tech?subject=r1_Fuel%20correction">hello@blankframe.tech</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

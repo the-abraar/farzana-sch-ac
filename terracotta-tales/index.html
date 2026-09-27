@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terracotta Tales — Handcrafted Earth, Self-Funded Independence | BlankFrame</title>
+<meta name="description" content="How Farzana Reza Shifa founded Terracotta Tales, generating 2.5 Lakhs BDT in one year to completely fund her university studies through artisanal claycraft and digital storytelling.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Terracotta Tales — Handcrafted Earth, Self-Funded Independence">
+<meta property="og:description" content="Artisanal terracotta micro-enterprise founded by Farzana Reza Shifa. ৳2.5L revenue generated in one year, self-funding her university studies.">
+<meta property="og:url" content="https://farzana.sch.ac/terracotta-tales/">
+<meta property="og:image" content="https://farzana.sch.ac/terracotta-tales/assets/images/og-terracotta.jpg">
+<meta property="og:type" content="article">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23C45A36'/%3E%3Cpath d='M30 70 C30 50 70 50 70 70 Z' fill='%23fff'/%3E%3Ccircle cx='50' cy='36' r='12' fill='%23fff'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #F2F1ED;
+    --card: #FFFFFF;
+    --ink: #131313;
+    --ink-soft: #2A2A28;
+    --muted: #6F6E6A;
+    --faint: #A5A39D;
+    --line: #E6E4DE;
+    --accent: #FF4A1F;
+    --terracotta: #C45A36;
+    --terracotta-dark: #8F3A1D;
+    --terracotta-light: #F9EBE6;
+    --radius-lg: 28px;
+    --radius-md: 20px;
+    --radius-sm: 12px;
+    --max-w: 1060px;
+    --shadow-card: 0 1px 2px rgba(19,19,19,0.04), 0 10px 30px -12px rgba(19,19,19,0.10);
+    --shadow-pill: 0 1px 2px rgba(19,19,19,0.06), 0 12px 32px -14px rgba(19,19,19,0.18);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .display{
+    font-family: 'Inter Tight', 'Inter', sans-serif;
+    letter-spacing: -0.035em;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .serif-accent{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  a{ color: inherit; }
+
+  .wrap{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 640px){
+    .wrap{ padding: 0 18px; }
+  }
+
+  /* Motion reduction */
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  /* -------- Reveal animation -------- */
+  .reveal{
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 650ms cubic-bezier(.22,.61,.36,1), transform 650ms cubic-bezier(.22,.61,.36,1);
+  }
+  .reveal.in{ opacity: 1; transform: translateY(0); }
+  .reveal.d1{ transition-delay: 80ms; }
+  .reveal.d2{ transition-delay: 160ms; }
+  .reveal.d3{ transition-delay: 240ms; }
+
+  /* -------- Floating Nav -------- */
+  .nav-shell{
+    position: fixed;
+    top: 16px; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+
+  .nav-pill{
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(19,19,19,0.08);
+    border-radius: 999px;
+    padding: 8px 10px 8px 18px;
+    box-shadow: var(--shadow-pill);
+    max-width: 820px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+    font-size: 15.5px;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .brand-clay{
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    background: var(--terracotta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .nav-links a{
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+  .nav-links a:hover{ color: var(--ink); }
+
+  .nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: #fff;
+    border-radius: 999px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    border: none;
+    cursor: pointer;
+    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+    white-space: nowrap;
+  }
+  .btn:hover{
+    background: #000;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px -10px rgba(19,19,19,0.35);
+  }
+  .btn.terracotta{
+    background: var(--terracotta);
+  }
+  .btn.terracotta:hover{
+    background: var(--terracotta-dark);
+  }
+  .btn.light{
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .btn.light:hover{
+    background: #fff;
+    box-shadow: 0 10px 24px -12px rgba(19,19,19,0.20);
+  }
+
+  @media (max-width: 720px){
+    .nav-links{ display: none; }
+    .nav-pill{ max-width: none; width: auto; gap: 14px; }
+  }
+
+  /* -------- Hero Section -------- */
+  .hero{
+    padding: 130px 0 36px;
+  }
+
+  .chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    box-shadow: 0 1px 2px rgba(19,19,19,0.04);
+    margin-bottom: 22px;
+  }
+
+  .dot{
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--terracotta);
+    flex-shrink: 0;
+  }
+
+  .hero-grid{
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  @media (max-width: 880px){
+    .hero-grid{
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+
+  .hero-title{
+    font-size: clamp(2.5rem, 6.2vw, 4.3rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+  .hero-title .clay-highlight{
+    color: var(--terracotta);
+  }
+
+  .hero-lead{
+    font-size: clamp(1.05rem, 2.2vw, 1.22rem);
+    color: var(--ink-soft);
+    margin: 22px 0 28px;
+    max-width: 54ch;
+    line-height: 1.6;
+  }
+
+  .hero-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .hero-tag{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(196, 90, 54, 0.09);
+    color: var(--terracotta-dark);
+    border: 1px solid rgba(196, 90, 54, 0.22);
+    border-radius: 999px;
+    padding: 6px 14px;
+  }
+
+  .hero-card{
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+  }
+
+  .hero-card img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    transition: transform 700ms cubic-bezier(.22,.61,.36,1);
+  }
+  .hero-card:hover img{
+    transform: scale(1.03);
+  }
+
+  .hero-card-caption{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px 20px 18px;
+    background: linear-gradient(180deg, transparent 0%, rgba(19,19,19,0.85) 100%);
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .hero-card-caption span{ font-weight: 600; }
+  .hero-card-caption small{ opacity: 0.8; font-size: 11.5px; }
+
+  /* -------- Bento Metric Stats -------- */
+  .stats-bento{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 48px 0;
+  }
+
+  @media (max-width: 860px){
+    .stats-bento{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px){
+    .stats-bento{ grid-template-columns: 1fr; }
+  }
+
+  .stat-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 24px 22px;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card.highlight{
+    background: #141413;
+    color: #fff;
+    border-color: #141413;
+  }
+  .stat-num{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-card.highlight .stat-num{
+    color: var(--terracotta);
+  }
+  .stat-lbl{
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .stat-card.highlight .stat-lbl{
+    color: rgba(255,255,255,0.55);
+  }
+  .stat-sub{
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .stat-card.highlight .stat-sub{
+    color: rgba(255,255,255,0.78);
+  }
+
+  /* -------- Section Shells -------- */
+  section{ padding: 48px 0; }
+
+  .section-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-bottom: 18px;
+  }
+  .section-tag::before{
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--terracotta);
+  }
+
+  .section-title{
+    font-size: clamp(1.8rem, 4.2vw, 2.7rem);
+    line-height: 1.08;
+    margin: 0 0 16px;
+  }
+
+  .section-sub{
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 64ch;
+    margin: 0 0 36px;
+  }
+
+  /* -------- The Narrative / Pillar Grid -------- */
+  .narrative-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 860px){
+    .narrative-grid{ grid-template-columns: 1fr; }
+  }
+
+  .story-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 30px 28px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .story-num{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: var(--terracotta);
+    margin-bottom: 14px;
+    line-height: 1;
+  }
+
+  .story-card h3{
+    font-size: 1.22rem;
+    margin-bottom: 12px;
+  }
+
+  .story-card p{
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* -------- Highlight Quote Card -------- */
+  .quote-card{
+    background: #141413;
+    color: #fff;
+    border-radius: var(--radius-lg);
+    padding: clamp(32px, 6vw, 54px);
+    position: relative;
+    overflow: hidden;
+    margin: 32px 0 54px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .quote-card::before{
+    content: '“';
+    position: absolute;
+    top: -30px; right: 30px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 10rem;
+    color: rgba(196,90,54,0.18);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .quote-card p{
+    position: relative;
+    margin: 0;
+    font-size: clamp(1.2rem, 2.8vw, 1.65rem);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    max-width: 48ch;
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 1.35;
+  }
+
+  .quote-card .quote-author{
+    position: relative;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .quote-author img{
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--terracotta);
+  }
+
+  .quote-author-info{
+    font-size: 13.5px;
+    line-height: 1.3;
+  }
+  .quote-author-name{ font-weight: 700; color: #fff; }
+  .quote-author-role{ font-size: 12px; color: rgba(255,255,255,0.65); }
+
+  /* -------- Masonry / Visual Showcase Gallery -------- */
+  .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-item{
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+  }
+
+  .gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 550ms cubic-bezier(.22,.61,.36,1);
+  }
+
+  .gallery-item:hover img{
+    transform: scale(1.04);
+  }
+
+  /* Responsive column spans */
+  .col-8{ grid-column: span 8; min-height: 480px; }
+  .col-4{ grid-column: span 4; min-height: 480px; }
+  .col-6{ grid-column: span 6; min-height: 440px; }
+  .col-12{ grid-column: span 12; min-height: 520px; }
+
+  @media (max-width: 860px){
+    .col-8, .col-4, .col-6{ grid-column: span 12; min-height: 380px; }
+    .col-12{ min-height: 380px; }
+  }
+
+  .gallery-badge{
+    position: absolute;
+    top: 18px; left: 18px;
+    background: rgba(19,19,19,0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .gallery-overlay{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 26px 22px 18px;
+    background: linear-gradient(180deg, transparent 0%, rgba(19,19,19,0.88) 100%);
+    color: #fff;
+    transition: transform 300ms ease;
+  }
+
+  .gallery-overlay h4{
+    font-size: 1.15rem;
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+
+  .gallery-overlay p{
+    font-size: 12.5px;
+    margin: 0;
+    opacity: 0.85;
+    line-height: 1.45;
+  }
+
+  /* -------- Lightbox Modal -------- */
+  .lightbox{
+    position: fixed;
+    inset: 0;
+    background: rgba(19,19,19,0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: zoom-out;
+  }
+  .lightbox.active{ display: flex; }
+
+  .lightbox-content{
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox-content img{
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .lightbox-caption{
+    color: #fff;
+    margin-top: 14px;
+    text-align: center;
+    max-width: 60ch;
+    font-size: 14px;
+  }
+
+  .lightbox-close{
+    position: absolute;
+    top: -40px; right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  /* -------- Founder Profile Section -------- */
+  .founder-card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-card);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 36px;
+    align-items: center;
+    margin: 48px 0;
+  }
+
+  @media (max-width: 720px){
+    .founder-card{ grid-template-columns: 1fr; padding: 26px; }
+  }
+
+  .founder-photo{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+  }
+
+  .founder-card h3{
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+  }
+
+  .founder-role{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+  }
+
+  .founder-card p{
+    font-size: 0.96rem;
+    color: var(--ink-soft);
+    margin: 0 0 22px;
+    line-height: 1.6;
+  }
+
+  .founder-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* -------- Footer -------- */
+  footer{
+    border-top: 1px solid var(--line);
+    padding: 40px 0 60px;
+    margin-top: 40px;
+  }
+  .footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .footer-inner a{ text-decoration: none; transition: color 200ms ease; }
+  .footer-inner a:hover{ color: var(--ink); }
+
+  :focus-visible{
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body id="top">
+
+<!-- Floating Pill Nav -->
+<div class="nav-shell">
+  <nav class="nav-pill" aria-label="Main Navigation">
+    <a href="/" class="brand">
+      <span class="brand-clay" aria-hidden="true">T</span>
+      <span>Terracotta <span class="serif-accent">Tales</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#story">The Story</a>
+      <a href="#gallery">Artisan Gallery</a>
+      <a href="#metrics">Unit Economics</a>
+      <a href="/">Founder Bio</a>
+    </div>
+    <div class="nav-actions">
+      <a href="/" class="btn light" title="View Farzana Reza Shifa Profile">Founder &rarr;</a>
+      <a href="/" class="btn" title="Back to BlankFrame Home">&larr; BlankFrame</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="chip reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Artisan Craft &middot; Student Micro-Enterprise</span>
+          </div>
+
+          <h1 class="hero-title reveal d1">
+            Handcrafted Earth.<br>
+            <span class="serif-accent clay-highlight">Self-Funded Independence.</span>
+          </h1>
+
+          <p class="hero-lead reveal d2">
+            In one year, sociology undergraduate <strong>Farzana Reza Shifa</strong> turned heritage Bengal terracotta pottery into a thriving independent business—generating <strong>৳2.5 Lakhs BDT (250,000 BDT)</strong> in revenue to completely finance her university tuition and living costs at SUST.
+          </p>
+
+          <div class="hero-tags reveal d2">
+            <span class="hero-tag">৳2.5L Revenue</span>
+            <span class="hero-tag">100% Self-Funded Studies</span>
+            <span class="hero-tag">Direct Artisan Sourcing</span>
+            <span class="hero-tag">Zero Transit Breakage</span>
+          </div>
+
+          <div class="reveal d3" style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="#gallery" class="btn terracotta">Explore Craft Gallery &darr;</a>
+            <a href="#story" class="btn light">Read Business Story</a>
+            <a href="/" class="btn light">Meet Founder &rarr;</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal d2">
+          <!-- Mandatory Fetch Priority for LCP per Modern Web Guidance -->
+          <img src="assets/images/hero-cup-flower.jpg" 
+               alt="Intricately etched terracotta tea cup with yellow blossoms floating in tea under warm sunlight" 
+               fetchpriority="high" 
+               width="1289" height="1718">
+          <div class="hero-card-caption">
+            <div>
+              <span>Hand-Carved Terracotta Cup &amp; Saucer</span><br>
+              <small>Fired river clay with traditional geometric motifs</small>
+            </div>
+            <span>৳250/set</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BENTO METRICS -->
+  <section id="metrics" style="padding-top: 10px;">
+    <div class="wrap">
+      <div class="stats-bento">
+        <div class="stat-card highlight reveal">
+          <div class="stat-lbl">1-Year Revenue</div>
+          <div class="stat-num">৳2.5L</div>
+          <div class="stat-sub">Over ৳2,50,000 BDT generated through direct retail &amp; bespoke gift packages.</div>
+        </div>
+
+        <div class="stat-card reveal d1">
+          <div class="stat-lbl">Tuition &amp; Living</div>
+          <div class="stat-num">100%</div>
+          <div class="stat-sub">Completely self-funded university fees, housing, and food at SUST without student debt.</div>
+        </div>
+
+        <div class="stat-card reveal d2">
+          <div class="stat-lbl">Supply Footprint</div>
+          <div class="stat-num">3 Cities</div>
+          <div class="stat-sub">Sourced from regional master potters; distributed across Dhaka, Sylhet, and Chittagong.</div>
+        </div>
+
+        <div class="stat-card reveal d3">
+          <div class="stat-lbl">Transit Safety</div>
+          <div class="stat-num">&lt; 1%</div>
+          <div class="stat-sub">Proprietary straw-cushioned organic packing preventing postal breakage of delicate clay.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE NARRATIVE / BUSINESS JOURNEY -->
+  <section id="story">
+    <div class="wrap">
+      <span class="section-tag reveal">The Business Journey</span>
+      <h2 class="section-title reveal d1">Turning Bengal silt into <span class="serif-accent">financial freedom.</span></h2>
+      <p class="section-sub reveal d2">
+        Most student ventures begin with drop-shipping or digital gigs. Terracotta Tales was rooted in physical earth, negotiating directly with master craftspersons, mastering supply chain fragility, and creating a modern appetite for sustainable earthenware.
+      </p>
+
+      <div class="narrative-grid">
+        <div class="story-card reveal">
+          <div>
+            <div class="story-num">01</div>
+            <h3>The Catalyst &amp; Vision</h3>
+            <p>Moving from Viqarunnisa Noon in Dhaka to Shahjalal University of Science &amp; Technology (SUST) in Sylhet, Shifa faced the sudden economic reality of funding university life independently. Rather than taking loans or relying on family, she noticed the timeless elegance of local artisan pottery and identified an untapped urban market for aesthetic, non-toxic, handmade clayware.</p>
+          </div>
+        </div>
+
+        <div class="story-card reveal d1">
+          <div>
+            <div class="story-num">02</div>
+            <h3>Artisan Partnerships</h3>
+            <p>She traveled directly to potter communities (<em>pal para</em> / <em>mrittika shilpi</em>), skipping predatory middlemen. Shifa worked alongside traditional potters to co-design modern silhouettes: ergonomic tea mugs with geometric relief carvings, botanical planter pots with internal moisture balance, and glazed culinary mortar sets.</p>
+          </div>
+        </div>
+
+        <div class="story-card reveal d2">
+          <div>
+            <div class="story-num">03</div>
+            <h3>The Fragility Equation</h3>
+            <p>Shipping fired clay across Bangladesh courier networks is an operational nightmare. Through systematic drop-testing, Shifa engineered an all-natural packaging system using compressed rice straw, corrugated pulp, and biodegradable bindings. The result was a remarkable under-1% damage rate across hundreds of shipments.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="narrative-grid">
+        <div class="story-card reveal">
+          <div>
+            <div class="story-num">04</div>
+            <h3>Organic Digital Storytelling</h3>
+            <p>Equipped with a phone camera, natural window light, and an eye for warmth, Shifa produced calm, honest product videos. By demonstrating morning tea rituals and succulent potting, she generated authentic customer interest without paid ad spend, building a genuine community of repeat buyers.</p>
+          </div>
+        </div>
+
+        <div class="story-card reveal d1">
+          <div>
+            <div class="story-num">05</div>
+            <h3>Notion-Powered Operations</h3>
+            <p>Every single transaction, vendor lead time, profit margin, and customer address was logged in a live, custom-built Notion database. This operational rigor gave angel backers and collaborators full transparency into cash flows and unit-level margins.</p>
+          </div>
+        </div>
+
+        <div class="story-card reveal d2">
+          <div>
+            <div class="story-num">06</div>
+            <h3>Self-Funded Graduation</h3>
+            <p>Terracotta Tales grossed over 2.5 Lakhs BDT in its first 12 months. Every penny earned paid for semester tuition, books, rent, and daily living. More importantly, it gave Shifa first-hand operational mastery that no textbook can teach.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUOTE CARD -->
+      <div class="quote-card reveal">
+        <p>&ldquo;Raising money is one problem. Turning that money into a business that actually survives is a bigger one — I&rsquo;ve solved both for myself, and I want to help other entrepreneurs solve the second.&rdquo;</p>
+        <div class="quote-author">
+          <img src="../assets/profile.jpg" alt="Farzana Reza Shifa" loading="lazy">
+          <div class="quote-author-info">
+            <div class="quote-author-name">Farzana Reza Shifa</div>
+            <div class="quote-author-role">Founder, Terracotta Tales &middot; SUST Sociology Graduate</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ARTISAN VISUAL GALLERY -->
+  <section id="gallery">
+    <div class="wrap">
+      <span class="section-tag reveal">Artisan Artifacts</span>
+      <h2 class="section-title reveal d1">Handcrafted with earth, fire, <span class="serif-accent">&amp; patient hands.</span></h2>
+      <p class="section-sub reveal d2">
+        A photographic record of the handcrafted pieces that powered the venture. Each piece was individually thrown on traditional kick-wheels, sun-dried, hand-etched, and kiln-fired.
+      </p>
+
+      <div class="gallery-grid">
+        
+        <!-- Item 1: Wide Lifestyle Ukulele & Pots -->
+        <div class="gallery-item col-8 reveal" onclick="openLightbox('assets/images/lifestyle-ukulele.jpg', 'Lifestyle Window Vignette — Handcrafted terracotta planters, ceramic water vessel, and ukulele bathed in natural rain-filtered daylight.')">
+          <span class="gallery-badge">Studio Life</span>
+          <img src="assets/images/lifestyle-ukulele.jpg" alt="Terracotta botanical planters, ukulele, and tea cup on windowsill" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>The Student Studio Sanctuary</h4>
+            <p>Ukulele, indoor botanical saplings, and terracotta teaware sharing desk space during study breaks.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Golden Carved Succulent Pot -->
+        <div class="gallery-item col-4 reveal d1" onclick="openLightbox('assets/images/golden-planter-cactus.jpg', 'Golden Fern Succulent Planter — Gold-tinted earthen pot with hand-carved leaf and feather motifs housing a desert cactus.')">
+          <span class="gallery-badge">Botanical Vessel</span>
+          <img src="assets/images/golden-planter-cactus.jpg" alt="Gold-tinted carved terracotta pot with a cactus" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Gilded Botanical Planter</h4>
+            <p>Etched relief patterns with eco-friendly metallic pigment, designed for indoor succulent care.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Cup in Sunlight -->
+        <div class="gallery-item col-4 reveal" onclick="openLightbox('assets/images/cup-sunlight.jpg', 'Sunlit Tea Cup & Saucer — Geometric diamond patterns catching directional sunbeams with fresh floating petals.')">
+          <span class="gallery-badge">Signature Ceramic</span>
+          <img src="assets/images/cup-sunlight.jpg" alt="Artisan terracotta cup held in hand under sunbeam" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Sunlit River Silt</h4>
+            <p>Raw unglazed clay provides natural evaporative cooling and an authentic, grounding earth scent.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Botanical Planters Duo -->
+        <div class="gallery-item col-4 reveal d1" onclick="openLightbox('assets/images/botanical-planters.jpg', 'Terracotta Garden Trio — Fluted clay planters and textured botanical containers lined along an open window.')">
+          <span class="gallery-badge">Indoor Greenery</span>
+          <img src="assets/images/botanical-planters.jpg" alt="Multiple terracotta plant pots with green plants" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Porous Root Respiration</h4>
+            <p>Natural micro-pores in earthenware regulate soil moisture better than synthetic plastic containers.</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Pottery Table & Mortar -->
+        <div class="gallery-item col-4 reveal d2" onclick="openLightbox('assets/images/pottery-table.jpg', 'Heritage Spice Plate & Mortar — Textured terracotta grinding plate and handcrafted wooden pestle paired with sapling pot.')">
+          <span class="gallery-badge">Culinary Heritage</span>
+          <img src="assets/images/pottery-table.jpg" alt="Terracotta mortar bowl with wooden pestle and red sapling" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Culinary Mortar &amp; Pestle</h4>
+            <p>Traditional Bengali spice friction plate etched with cross-hatched grooves for artisanal food preparation.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Window Collection Overview -->
+        <div class="gallery-item col-8 reveal" onclick="openLightbox('assets/images/pottery-window-collection.jpg', 'The Complete Tabletop Array — Earthen teacup, wide-mouth planter with young sapling, and textured mortar set.')">
+          <span class="gallery-badge">Collection Array</span>
+          <img src="assets/images/pottery-window-collection.jpg" alt="Terracotta pottery collection on windowsill" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Window Silt Tabletop</h4>
+            <p>The core Terracotta Tales catalog: functional everyday ware celebrating Bengal’s living craft tradition.</p>
+          </div>
+        </div>
+
+        <!-- Item 7: Hand Holding Cup -->
+        <div class="gallery-item col-4 reveal d1" onclick="openLightbox('assets/images/cup-hand.jpg', 'Ergonomic Clay Grip — Human scale demonstration of the hand-carved terracotta tea mug.')">
+          <span class="gallery-badge">Tactile Touch</span>
+          <img src="assets/images/cup-hand.jpg" alt="Hand holding terracotta cup with tea" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Tactile Human Connection</h4>
+            <p>Designed to fit comfortably in both hands during solitary morning tea or late-night study marathons.</p>
+          </div>
+        </div>
+
+        <!-- Item 8: Terracotta Candle Lamp -->
+        <div class="gallery-item col-4 reveal" onclick="openLightbox('assets/images/terracotta-candle-lamp.jpg', 'Terracotta Candle Lamp — Spherical earthen lamp with hand-carved floral aperture petals casting warm interior ambient glow.')">
+          <span class="gallery-badge">Ambient Illumination</span>
+          <img src="assets/images/terracotta-candle-lamp.jpg" alt="Terracotta candle lamp with carved floral cutouts" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Floral Cutout Clay Lamp</h4>
+            <p>Intricate negative-space star cutouts designed for candles and tea-lights to disperse warm golden light.</p>
+          </div>
+        </div>
+
+        <!-- Item 9: Folk Art Painted Terracotta Plate -->
+        <div class="gallery-item col-4 reveal d1" onclick="openLightbox('assets/images/folk-art-plate.jpg', 'Folk Art Wall Plate — Hand-painted circular clay plate featuring Jamini Roy-inspired traditional Bengal portraiture.')">
+          <span class="gallery-badge">Folk Art</span>
+          <img src="assets/images/folk-art-plate.jpg" alt="Hand-painted folk art terracotta plate" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Bengal Heritage Wall Plate</h4>
+            <p>Traditional acrylic and natural lacquer pigments on fired clay, blending indigenous folklore with home decor.</p>
+          </div>
+        </div>
+
+        <!-- Item 10: Mayer Doa Rickshaw Art Vessel -->
+        <div class="gallery-item col-4 reveal d2" onclick="openLightbox('assets/images/mayer-doa-pot.jpg', 'Mayer Doa Hand-Painted Vessel — Vibrant rickshaw-art painted clay pot with peacock motifs and cats curiosity.')">
+          <span class="gallery-badge">Rickshaw Art</span>
+          <img src="assets/images/mayer-doa-pot.jpg" alt="Rickshaw art painted terracotta vessel with Mayer Doa calligraphy" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>&ldquo;Mayer Doa&rdquo; Rickshaw Ceramic</h4>
+            <p>Celebrating Dhaka street art culture on raw earthenware, inspected by Shifa&rsquo;s resident studio feline.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER SPOTLIGHT -->
+  <section>
+    <div class="wrap">
+      <div class="founder-card reveal">
+        <img class="founder-photo" src="../assets/profile.jpg" alt="Farzana Reza Shifa" loading="lazy">
+        <div>
+          <div class="founder-role">Creator &amp; Sociologist</div>
+          <h3>Farzana Reza Shifa</h3>
+          <p>
+            Farzana is a Sociology graduate from Shahjalal University of Science &amp; Technology (SUST). Her experience building Terracotta Tales—from seed fundraising and artisan negotiations to packaging physics and social media growth—informs her current work in entrepreneurship development, market linkages, and digital business infrastructure.
+          </p>
+          <div class="founder-actions">
+            <a href="/" class="btn terracotta">View Full Interactive CV &rarr;</a>
+            <a href="mailto:farzanarezashifa@gmail.com" class="btn light">Get in Touch</a>
+            <a href="https://shifa-workspace.notion.site/" target="_blank" rel="noopener" class="btn light">Notion Portfolio &nearr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)" role="dialog" aria-modal="true" aria-label="Image Preview">
+  <div class="lightbox-content">
+    <button type="button" class="lightbox-close" onclick="closeLightboxDirect()" aria-label="Close image preview">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong>Terracotta Tales</strong> &middot; An enterprise by <a href="/" style="font-weight:600; text-decoration:underline;">Farzana Reza Shifa</a>
+    </div>
+    <div>
+      <span>Curated under <a href="/" style="font-weight:600;">BlankFrame Technologies</a></span> &middot; 
+      <a href="/visit-count/">Live Stats &nearr;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal animation
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+
+  function openLightbox(src, caption) {
+    lightboxImg.src = src;
+    lightboxImg.alt = caption;
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox(e) {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+      closeLightboxDirect();
+    }
+  }
+
+  function closeLightboxDirect() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightboxDirect();
+    }
+  });
+</script>
+
+</body>
+</html>

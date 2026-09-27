@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farzana Reza Shifa — Sociologist, Field Researcher, Founder</title>
+<meta name="description" content="Farzana Reza Shifa — sociology graduate and applied field researcher (informal micro-economies, fuel-shock impact) who also founded and ran a self-funded small business.">
+
+<meta property="og:title" content="Farzana Reza Shifa">
+<meta property="og:description" content="Sociologist &middot; Field Researcher &middot; Founder">
+<meta property="og:url" content="https://farzana.sch.ac/">
+<meta property="og:type" content="profile">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23111213'/%3E%3Ctext x='50' y='68' font-size='58' font-family='sans-serif' font-weight='700' fill='%23fff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #F2F1ED;
+    --card: #FFFFFF;
+    --ink: #131313;
+    --ink-soft: #2A2A28;
+    --muted: #6F6E6A;
+    --faint: #A5A39D;
+    --line: #E6E4DE;
+    --accent: #FF4A1F;
+    --honey: #D9822B;
+    --radius-lg: 28px;
+    --radius-md: 20px;
+    --max-w: 1000px;
+    --shadow-card: 0 1px 2px rgba(19,19,19,0.04), 0 10px 30px -12px rgba(19,19,19,0.10);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, .display{
+    font-family: 'Inter Tight', 'Inter', sans-serif;
+    letter-spacing: -0.035em;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .serif-accent{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  a{ color: inherit; }
+
+  .wrap{
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 640px){
+    .wrap{ padding: 0 18px; }
+  }
+
+  /* -------- Hero -------- */
+  .hero{
+    padding: 64px 0 20px;
+  }
+
+  .hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .hero-photo{
+    width: 100%;
+    aspect-ratio: 1 / 1.02;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--line);
+  }
+
+  @media (max-width: 720px){
+    .hero-grid{ grid-template-columns: 1fr; }
+    .hero-photo{ order: -1; width: 120px; }
+  }
+
+  .role-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 26px;
+  }
+  .role-chip{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 7px 14px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--ink-soft);
+  }
+  .role-chip.solid{
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+
+  .hero h1{
+    font-size: clamp(2.6rem, 8vw, 4.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+  }
+
+  .contact-row{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .contact-chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 9px 16px;
+    text-decoration: none;
+    box-shadow: var(--shadow-card);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+  a.contact-chip:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px -12px rgba(19,19,19,0.25);
+  }
+
+  /* -------- Stats -------- */
+  .stats-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 48px;
+  }
+  @media (max-width: 560px){
+    .stats-grid{ grid-template-columns: 1fr; }
+  }
+  .stat-card{
+    border-radius: var(--radius-md);
+    padding: 26px 26px;
+    box-shadow: var(--shadow-card);
+  }
+  .stat-card.dark{
+    background: #141413;
+    color: #fff;
+  }
+  .stat-card.light{
+    background: var(--card);
+    border: 1px solid var(--line);
+  }
+  .stat-num{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+  .stat-card.dark .stat-num{ color: var(--accent); }
+  .stat-label{
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat-card.dark .stat-label{ color: rgba(255,255,255,0.55); }
+
+  /* -------- Section shell -------- */
+  section{ padding: 40px 0; }
+
+  .label-chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 14px;
+    margin-bottom: 20px;
+  }
+  .label-chip::before{
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .section-h{
+    font-size: clamp(1.5rem, 3.4vw, 2rem);
+    line-height: 1.1;
+  }
+
+  .lede{
+    margin-top: 16px;
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    max-width: 62ch;
+  }
+
+  /* -------- Research programme cards -------- */
+  .programme-list{ margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+  .programme{
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius-md); padding: 26px 28px;
+    box-shadow: var(--shadow-card);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+  .programme:hover{ transform: translateY(-2px); box-shadow: 0 16px 40px -16px rgba(19,19,19,0.22); }
+  .status-chip{
+    display: inline-block;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    border-radius: 999px; padding: 5px 12px; margin-bottom: 12px;
+  }
+  .status-chip.active{ background: rgba(217,130,43,0.12); color: #A05915; border: 1px solid rgba(217,130,43,0.25); }
+  .status-chip.mirror{ background: rgba(19,19,19,0.06); color: var(--ink-soft); }
+  .programme h3{ font-size: 1.15rem; margin: 0 0 8px; }
+  .programme p{ margin: 0; color: var(--muted); font-size: 0.93rem; max-width: 68ch; }
+  .programme .go{
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
+    font-size: 12.5px; font-weight: 600; color: var(--accent);
+  }
+  .programme.honey .go{ color: var(--honey); }
+
+  /* -------- Two-up panels -------- */
+  .panel-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .panel-grid.two-up{ grid-template-columns: 1fr 1fr; }
+  @media (max-width: 860px){
+    .panel-grid{ grid-template-columns: 1fr; }
+  }
+
+  .panel{
+    border-radius: var(--radius-md);
+    padding: 26px 28px;
+  }
+  .panel.light{
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-card);
+  }
+  .panel.dark{
+    background: #141413;
+    color: #fff;
+  }
+
+  .panel h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 18px;
+  }
+  .panel h3 .swatch{
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .skill-list{
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skill-list li{
+    font-size: 0.94rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    padding-left: 16px;
+    position: relative;
+  }
+  .panel.dark .skill-list li{ color: rgba(255,255,255,0.85); }
+  .skill-list li::before{
+    content: '';
+    position: absolute;
+    left: 0; top: 8px;
+    width: 6px; height: 2px;
+    background: var(--accent);
+  }
+
+  /* -------- Timeline -------- */
+  .timeline{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+  .t-item{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 20px;
+    padding: 22px 26px;
+    border-top: 1px solid var(--line);
+    align-items: baseline;
+  }
+  .t-item:first-child{ border-top: none; }
+  .t-year{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--faint);
+    white-space: nowrap;
+  }
+  .t-item h4{
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+  }
+  .t-item p{
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .t-company{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 8px !important;
+  }
+  .t-item .t-desc{ margin-top: 6px; }
+  @media (max-width: 560px){
+    .t-item{ grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  /* -------- Tags -------- */
+  .tag-row{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tag{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 9px 16px;
+  }
+
+  /* -------- Quote -------- */
+  .quote-card{
+    margin-top: 16px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    padding: clamp(28px, 5vw, 44px);
+    position: relative;
+    overflow: hidden;
+  }
+  .quote-card::before{
+    content: '“';
+    position: absolute;
+    top: -30px; right: 20px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 9rem;
+    color: rgba(255,255,255,0.16);
+    line-height: 1;
+  }
+  .quote-card p{
+    position: relative;
+    margin: 0;
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    max-width: 56ch;
+    font-family: 'Inter Tight', sans-serif;
+  }
+  .quote-card .attr{
+    position: relative;
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+  }
+
+  /* -------- Footer -------- */
+  footer{
+    border-top: 1px solid var(--line);
+    padding: 32px 0 48px;
+    margin-top: 24px;
+  }
+  .footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--faint);
+  }
+  .footer-inner a{ text-decoration: none; transition: color 200ms ease; }
+  .footer-inner a:hover{ color: var(--ink); }
+
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="role-row">
+            <span class="role-chip solid">Sociologist</span>
+            <span class="role-chip">Field Researcher</span>
+            <span class="role-chip">Founder &amp; Operator</span>
+            <span class="role-chip">Digital Creator</span>
+          </div>
+          <h1>Farzana Reza <span class="serif-accent">Shifa</span></h1>
+
+          <p class="lede" style="margin-top:22px;">Sociology graduate from SUST working on applied field research — informal micro-economies, seasonal shocks, and how households absorb economic policy in real time. She has also founded and run a small business: pitching investors, negotiating vendors, and managing supply and cash flow to fund her own studies. Comfortable turning scattered field data into a report someone can act on, or a stakeholder interview into a case study.</p>
+
+          <div class="contact-row">
+            <a class="contact-chip" href="/research/" style="background:var(--ink); color:#fff; font-weight:600;">Research &rarr;</a>
+            <a class="contact-chip" href="/terracotta-tales/" style="background:#D9822B; color:#fff; font-weight:600;">Terracotta Tales (৳2.5L Venture) &rarr;</a>
+            <a class="contact-chip" href="mailto:farzanarezashifa@gmail.com">farzanarezashifa@gmail.com</a>
+            <span class="contact-chip">Sylhet / Dhaka, BD</span>
+            <a class="contact-chip" href="./data/Shifa_cv_BRAC_EDU.pdf" download>Download CV ↓</a>
+            <a class="contact-chip" href="/card.html">Business card &rarr;</a>
+            <a class="contact-chip" href="https://www.blankframe.tech/shifa/" target="_blank" rel="noopener">Business profile ↗</a>
+          </div>
+        </div>
+        <img class="hero-photo" src="./assets/profile.jpg" alt="Portrait of Farzana Reza Shifa">
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card dark">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Active research programmes</div>
+        </div>
+        <div class="stat-card light">
+          <div class="stat-num">0.5M+</div>
+          <div class="stat-label">Peak engagement, digital work</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="wrap">
+      <span class="label-chip">Research</span>
+      <h2 class="section-h">Field work, close to the ground.</h2>
+      <p class="lede">Applied sociological research on informal economies and economic shocks — from a single orchard to a national fuel-price hike.</p>
+
+      <div class="programme-list">
+        <a class="programme honey" href="/research/panchagarh-honey/">
+          <span class="status-chip active">Field study &middot; 2024&ndash;2025</span>
+          <h3>Lichur Modhu: The Migratory Beekeepers of Panchagarh</h3>
+          <p>Economic ethnography of migratory litchi-honey apiarists: the 20-day bloom cycle, pollination barter agreements with orchard owners, middleman price squeeze, and direct-to-consumer farmgate branding.</p>
+          <span class="go">Explore field study &amp; media &rarr;</span>
+        </a>
+
+        <a class="programme" href="/fuel_shock_bd/">
+          <span class="status-chip mirror">Research programme &middot; mirrored</span>
+          <h3>r1_Fuel &mdash; Bangladesh&rsquo;s 2026 Fuel Shock</h3>
+          <p>The social life of a fuel-price hike: impact analysis, five costed study designs, an open discourse-analysis corpus, and a live audit log.</p>
+          <span class="go">Explore the programme &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC PATH -->
+  <section>
+    <div class="wrap">
+      <span class="label-chip">Academic Path</span>
+      <h2 class="section-h">Sylhet to Dhaka, on paper.</h2>
+
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-year">2020 –<br>2026</span>
+          <div>
+            <h4>BSS. Sociology · GPA 3.35/4.00</h4>
+            <p>SUST | Sylhet &middot; expected June 2026</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-year">2020</span>
+          <div>
+            <h4>HSC | GPA 5.0</h4>
+            <p>Viqarunnisa Noon</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-year">2018</span>
+          <div>
+            <h4>SSC | GPA 4.89</h4>
+            <p>Govt. Model Girls</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUITE -->
+  <section>
+    <div class="wrap">
+      <span class="label-chip">The Professional Suite</span>
+      <h2 class="section-h">Research-first, business-tested.</h2>
+      <p class="lede">Sociology-trained understanding of economic decision-making and reporting discipline, paired with hands-on experience founding and running a small enterprise — the market-linkage instincts that turn capital into a working business.</p>
+
+      <div class="panel-grid">
+        <div class="panel dark">
+          <h3><span class="swatch" aria-hidden="true"></span>People &amp; Reporting</h3>
+          <ul class="skill-list">
+            <li>Sociology: economic decision-making</li>
+            <li>Stakeholder interviews &amp; needs assessment</li>
+            <li>Fluent Bangla &amp; English reporting</li>
+            <li>Notion power user (data tracking)</li>
+            <li>Dashboard &amp; report building</li>
+          </ul>
+        </div>
+        <div class="panel light">
+          <h3><span class="swatch" aria-hidden="true"></span>Entrepreneurship &amp; Enterprise</h3>
+          <ul class="skill-list">
+            <li>Founded &amp; ran a small business</li>
+            <li>Investor pitching &amp; fundraising</li>
+            <li>Vendor negotiation &amp; supply chains</li>
+            <li>Cash-flow &amp; budget management</li>
+            <li>Client acquisition</li>
+          </ul>
+        </div>
+        <div class="panel light">
+          <h3><span class="swatch" aria-hidden="true"></span>Content &amp; Market Access</h3>
+          <ul class="skill-list">
+            <li>Audience-building &amp; promotion</li>
+            <li>High-retention storytelling</li>
+            <li>Logic Pro / Audacity / Final Cut Pro</li>
+            <li>OBS broadcast suite</li>
+            <li>Case-study &amp; field documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="wrap">
+      <span class="label-chip">Experience</span>
+      <h2 class="section-h">What she's actually been doing.</h2>
+
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-year">2024 –<br>2025</span>
+          <div>
+            <h4>Economic Ethnographer &middot; Panchagarh Honey Study</h4>
+            <p class="t-company">Applied Field Research &middot; Informal Agro-Enterprise</p>
+            <p class="t-desc">Field study investigating migratory litchi honey (Lichur Modhu) entrepreneurs in Panchagarh. Documented the 20-day bloom cycle, pollination barter agreements with orchard owners, middleman price squeeze (৳300/kg farmgate vs ৳1,200/kg retail), consumer crystallization misconceptions, and direct-to-consumer farmgate branding.</p>
+            <div style="margin-top: 10px;">
+              <a href="/research/panchagarh-honey/" style="display:inline-flex; align-items:center; gap:6px; font-size:12.5px; font-weight:600; color:#D9822B; text-decoration:none;">
+                Explore Field Study &amp; Media &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-year">2020 –<br>Present</span>
+          <div>
+            <h4>Digital Creator &amp; Content Strategist</h4>
+            <p class="t-company">Self-employed</p>
+            <p class="t-desc">Built a genuine following with bike vlogs, productivity hacks, and AI experiments — top post reached 0.5M views, averaging 65K+ across the top 10. Records and mixes audio for indie singers.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-year">2020 –<br>2021</span>
+          <div>
+            <h4>Freelance Tour Guide</h4>
+            <p class="t-company">International guests · Dhaka, Sylhet, Cox's Bazar</p>
+            <p class="t-desc">Guided tourists across the country, managing last-minute changes, cross-cultural questions, and on-ground logistics.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-year">2019 –<br>2020</span>
+          <div>
+            <h4>Founder &middot; Terracotta Tales</h4>
+            <p class="t-company">Self-funded venture &middot; ৳2.5 Lakhs BDT Revenue</p>
+            <p class="t-desc">Founded and operated an artisanal terracotta pottery venture generating ৳2.5 Lakhs in 1 year to completely fund university tuition and living costs at SUST. Pitched angel investors, negotiated with master potters across three cities, engineered zero-breakage straw packaging, and maintained transparent Notion dashboards.</p>
+            <div style="margin-top: 10px;">
+              <a href="/terracotta-tales/" style="display:inline-flex; align-items:center; gap:6px; font-size:12.5px; font-weight:600; color:var(--accent); text-decoration:none;">
+                View Terracotta Tales Showcase &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL VIBE -->
+  <section>
+    <div class="wrap">
+      <span class="label-chip">Personal Vibe</span>
+      <h2 class="section-h">Off the clock.</h2>
+      <div class="tag-row">
+        <span class="tag">Moto vlogging</span>
+        <span class="tag">Cycling</span>
+        <span class="tag">Hiking</span>
+        <span class="tag">Crochet &amp; DIY</span>
+        <span class="tag">Proud cat mom</span>
+        <span class="tag">UI/UX &amp; AI tools</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section>
+    <div class="wrap">
+      <div class="quote-card">
+        <p>The most interesting number is never the headline one — it's the one nobody measured because it happened inside a household, not a spreadsheet. That's the gap I keep going back into the field for.</p>
+        <div class="attr">Applied Field Research</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>Farzana Reza Shifa &middot; Curriculum Vitae <span id="year"></span></span>
+    <span>&ldquo;Tracking life on Notion since 2021&rdquo;</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
