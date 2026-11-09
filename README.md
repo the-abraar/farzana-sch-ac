@@ -10,7 +10,7 @@ beyond Google Fonts — plain HTML per route.
 | `/` | Profile — sociologist, field researcher, founder |
 | `/research/` | Research hub |
 | `/research/panchagarh-honey/` | Field study: migratory litchi-honey apiarists, Panchagarh |
-| `/fuel_shock_bd/` | Mirror of the `r1_Fuel` research programme (Bangladesh's 2026 fuel shock) |
+| `/fuel_shock_bd/` | Link-only stubs that send visitors to `blankframe.tech/research/r1_Fuel/` |
 | `/terracotta-tales/` | Terracotta Tales venture showcase |
 | `/card.html` | Digital business card |
 
@@ -20,9 +20,11 @@ one leads with the sociology/research work for an academic audience. Content ove
 by design; `/research/panchagarh-honey/` and `/terracotta-tales/` are the same field
 work and venture, republished here.
 
-`/fuel_shock_bd/` is a mirror of `blankframe.tech/research/r1_Fuel/` (source of truth:
-<https://github.com/the-abraar/FuelPriceHikeImpactResearch>). It has its own build step —
-see `fuel_shock_bd/README.md`.
+`/fuel_shock_bd/` used to be a full mirror of `blankframe.tech/research/r1_Fuel/`. Since
+8 November 2026 the programme is published in one place only: `fuel_shock_bd/` holds small
+link pages (overview, findings, proposal, collaborate, support, data, status) that point to the
+same route on blankframe.tech, and the old PDF and CSV downloads are gone. Edit the research
+site in the `landing-page` repo (`research/r1_Fuel/`), not here.
 
 ## Deploy with GitHub Pages
 
